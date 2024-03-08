@@ -1,6 +1,8 @@
 import smtplib
 import random
-key="fxjiinncmzsibwun"
+#En esta variable se guardara el token para enviar correos con gmail
+key=""
+#Esta funcion inicia los servios de smtplib 
 def servicio(host,port,mensaje):
     server=smtplib.SMTP(host,port)
     server.starttls()
@@ -8,7 +10,7 @@ def servicio(host,port,mensaje):
     server.sendmail(from_addr="franz0317medina@gmail.com",to_addrs="cetinae77@gmail.com",msg=mensaje)
     server.quit()
 
-
+#Esta funcion contiene en su interior una lista con los mensajes
 def mensaje():
     print("Ingresa c para salir ")
 #    mensaje=input("Mensaje : ")
