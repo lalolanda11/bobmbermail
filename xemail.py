@@ -7,7 +7,7 @@ def servicio(host,port,mensaje):
     server=smtplib.SMTP(host,port)
     server.starttls()
     server.login(user="franz0317medina@gmail.com",password=key)
-    server.sendmail(from_addr="franz0317medina@gmail.com",to_addrs="cetinae77@gmail.com",msg=mensaje)
+    server.sendmail(from_addr="@gmail.com",to_addrs="@gmail.com",msg=mensaje) # en esta variable introduciremos los correos de quien se envia y a quien va destinado
     server.quit()
 
 #Esta funcion contiene en su interior una lista con los mensajes
